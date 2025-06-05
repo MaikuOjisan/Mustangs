@@ -2,37 +2,161 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maiku Ojisan no webu peji
-    </title>
+    <title>Mustangs: Power & Freedom</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        background: linear-gradient(120deg, #232526, #414345);
+        color: #fff;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        background: #111;
+        padding: 1em 2em;
+        text-align: center;
+      }
+      nav a {
+        color: #ffb347;
+        text-decoration: none;
+        margin: 0 1em;
+        font-weight: bold;
+        font-size: 1.2em;
+        transition: color 0.2s;
+      }
+      nav a:hover {
+        color: #fff;
+      }
+      .sidebar {
+        float: left;
+        width: 220px;
+        background: #222;
+        min-height: 100vh;
+        padding: 2em 1em;
+        box-sizing: border-box;
+      }
+      .sidebar img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 1em;
+      }
+      .sidebar h3 {
+        color: #ffb347;
+        margin-top: 0;
+      }
+      .content {
+        margin-left: 240px;
+        padding: 2em;
+      }
+      .container h1 {
+        font-size: 2.5em;
+        margin-bottom: 0.2em;
+        color: #ffb347;
+        letter-spacing: 2px;
+      }
+      .container h2 {
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 1em;
+      }
+      #interests {
+        margin-top: 2em;
+      }
+      .mustang-gallery {
+        display: flex;
+        gap: 1.5em;
+        flex-wrap: wrap;
+        margin-top: 1em;
+      }
+      .mustang-gallery img {
+        width: 300px;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+        transition: transform 0.2s;
+      }
+      .mustang-gallery img:hover {
+        transform: scale(1.05);
+      }
+      .fact-list {
+        margin-top: 1em;
+        padding-left: 1.2em;
+      }
+      .fact-list li {
+        margin-bottom: 0.7em;
+        font-size: 1.1em;
+      }
+      @media (max-width: 900px) {
+        .sidebar {
+          display: none;
+        }
+        .content {
+          margin-left: 0;
+        }
+        .mustang-gallery {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
   </head>
 
   <body>
-    <!-- All content goes here -->
     <div id="all-contents">
       <nav>
-        
+        <a href="#">Home</a>
+        <a href="#history">History</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#facts">Fun Facts</a>
       </nav>
       
       <main>
         <!-- Sidebar Section-->
-         <div class="sidebar">
+        <div class="sidebar">
+          <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=400&q=80" alt="Mustang Car">
+          <h3>About Mustangs</h3>
+          <p>
+            The Ford Mustang is an icon of American muscle, blending power, style, and freedom since 1964.
+          </p>
         </div>
 
         <!-- Content section-->
-         <div class="content">
-
+        <div class="content">
           <div class="container">
-            <h1>Maiku Ojisan </h1>
-            <br>
-            <h2>大学生 です</h2>
+            <h1>Mustangs</h1>
+            <h2>The Legend of American Muscle</h2>
           </div>
 
-          <!-- Interests section-->
-           <div id="interests">
-          
-          </div>
-         </div>
+          <!-- History section -->
+          <section id="history">
+            <h2>History</h2>
+            <p>
+              The Ford Mustang debuted in 1964 and quickly became a symbol of performance and style. Its long hood, short rear deck, and aggressive stance set the standard for pony cars. Over the decades, the Mustang has evolved, but its spirit of freedom and adventure remains unchanged.
+            </p>
+          </section>
+
+          <!-- Gallery section -->
+          <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="mustang-gallery">
+              <img src="https://images.unsplash.com/photo-1511918984145-48de785d4c4e?auto=format&fit=crop&w=600&q=80" alt="Classic Mustang">
+              <img src="https://images.unsplash.com/photo-1462392246754-28dfa2df8e6b?auto=format&fit=crop&w=600&q=80" alt="Modern Mustang">
+              <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=600&q=80" alt="Mustang on the road">
+            </div>
+          </section>
+
+          <!-- Fun Facts section -->
+          <section id="facts">
+            <h2>Fun Facts</h2>
+            <ul class="fact-list">
+              <li>The Mustang was named after the P-51 Mustang fighter plane from WWII.</li>
+              <li>Over 10 million Mustangs have been produced since 1964.</li>
+              <li>The Mustang has appeared in over 3,000 movies and TV shows.</li>
+              <li>It was the first car to win the Tiffany Gold Medal for excellence in American design.</li>
+              <li>Mustangs are popular for customization and racing worldwide.</li>
+            </ul>
+          </section>
+        </div>
       </main>
     </div>
   </body>
