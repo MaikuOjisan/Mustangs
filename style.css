@@ -40,3 +40,14 @@ h2 {
     margin-bottom:2px;
 }
 
+a { text-decoration: none; color:white; }
+a:visited { text-decoration: green; }
+a:hover { text-decoration: greenyellow; }
+a:focus { text-decoration: greenyellow; }
+a:hover, a:active { text-decoration: greenyellow; }
+
+
+
+
+
+    
